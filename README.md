@@ -1,9 +1,9 @@
 # challenger
-[chal-in-jer]
+*[chal-in-jer]*
 
-noun
+**noun**
 
-Boxing. a boxer who fights a champion for his championship title.
+In Boxing: a boxer who fights a champion for his championship title.
 ## Overview
 Repository serving the purpose of storing attempts at coding challenges.
 ## Repository Structure
