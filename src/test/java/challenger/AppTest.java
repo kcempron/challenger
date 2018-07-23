@@ -49,4 +49,19 @@ public class AppTest
         assertTrue(uniString3.isUniqueSetApproach());
         assertTrue(uniString3.isUniqueSortedApproach());
     }
+
+    @Test
+    public void challenge2() {
+        final PalindromeStringVerifier palindrome1 = new PalindromeStringVerifier("saddas");
+        assertTrue(palindrome1.isPalindromeArrayApproach());
+        assertTrue(palindrome1.isPalindromeStackApproach());
+
+        final PalindromeStringVerifier palindrome2 = new PalindromeStringVerifier("1234321");
+        assertTrue(palindrome2.isPalindromeArrayApproach());
+        assertTrue(palindrome2.isPalindromeStackApproach());
+
+        final PalindromeStringVerifier palindrome3 = new PalindromeStringVerifier("abcCBA");
+        assertFalse(palindrome3.isPalindromeArrayApproach());
+        assertFalse(palindrome3.isPalindromeStackApproach());
+    }
 }
