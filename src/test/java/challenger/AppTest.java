@@ -74,5 +74,10 @@ public class AppTest
         final int[] logResult = ProductArrayCalculator.calculateWithLogging(input);
         assertArrayEquals(expected, basicResult);
         assertArrayEquals(expected, logResult);
+
+        final int[] input2 = new int[]{1,2,3,0};
+        final int[] expected2 = new int[]{0, 0, 0, 6};
+        final int[] basicResult2 = ProductArrayCalculator.calculate(input2);
+        assertArrayEquals(expected2, basicResult2);
     }
 }
