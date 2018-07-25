@@ -1,5 +1,6 @@
 package challenger;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -63,5 +64,20 @@ public class AppTest
         final PalindromeStringVerifier palindrome3 = new PalindromeStringVerifier("abcCBA");
         assertFalse(palindrome3.isPalindromeArrayApproach());
         assertFalse(palindrome3.isPalindromeStackApproach());
+    }
+
+    @Test
+    public void challenge3() {
+        final int[] input = new int[]{1, 2, 3};
+        final int[] expected = new int[]{6, 3, 2};
+        final int[] basicResult = ProductArrayCalculator.calculate(input);
+        final int[] logResult = ProductArrayCalculator.calculateWithLogging(input);
+        assertArrayEquals(expected, basicResult);
+        assertArrayEquals(expected, logResult);
+
+        final int[] input2 = new int[]{1,2,3,0};
+        final int[] expected2 = new int[]{0, 0, 0, 6};
+        final int[] basicResult2 = ProductArrayCalculator.calculate(input2);
+        assertArrayEquals(expected2, basicResult2);
     }
 }
