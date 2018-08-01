@@ -80,4 +80,17 @@ public class AppTest
         final int[] basicResult2 = ProductArrayCalculator.calculate(input2);
         assertArrayEquals(expected2, basicResult2);
     }
+
+    @Test
+    public void challenge4() {
+        final int[] input = new int[]{1, 2, 3};
+        final int[] expected = new int[]{0,2};
+        final int[] result1 = TwoSumCalculator.findTwoSum(input, 4);
+        assertArrayEquals(expected, result1);
+
+        final int[] input2 = new int[]{2, 2, 3};
+        final int[] expected2 = new int[]{0,1};
+        final int[] result2 = TwoSumCalculator.findTwoSum(input2, 4);
+        assertArrayEquals(expected2, result2);
+    }
 }
