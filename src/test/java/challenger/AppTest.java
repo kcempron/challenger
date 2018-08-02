@@ -1,6 +1,7 @@
 package challenger;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -92,5 +93,28 @@ public class AppTest
         final int[] expected2 = new int[]{0,1};
         final int[] result2 = TwoSumCalculator.findTwoSum(input2, 4);
         assertArrayEquals(expected2, result2);
+    }
+
+    @Test
+    public void challenge5() {
+        final String input = "abcabcdd";
+        final String expected = "abcd";
+        final String result = SubstringFinder.findLongestSubstring(input);
+        assertEquals(expected, result);
+
+        final String input2 = "abc";
+        final String expected2 = "abc";
+        final String result2 = SubstringFinder.findLongestSubstring(input2);
+        assertEquals(expected2, result2);
+
+        final String input3 = "bbbbb";
+        final String expected3 = "b";
+        final String result3 = SubstringFinder.findLongestSubstring(input3);
+        assertEquals(expected3, result3);
+
+        final String input4 = "abcabcdabcdeabcdefgh";
+        final String expected4 = "abcdefgh";
+        final String result4 = SubstringFinder.findLongestSubstring(input4);
+        assertEquals(expected4, result4);
     }
 }
