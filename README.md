@@ -12,6 +12,6 @@ This repository contains a Java project under `src` with corresponding `main` an
 Challenge problem implementations exist in the `main` directory and are tested under the `AppTest` test suite.
 
 
-The `challenges` directory contains the challenge prompts and also developer notes/responses to these prompts.
+The [challenges](challenges) directory contains the challenge prompts and also developer notes/responses to these prompts.
 
-The `elitecode` directory contains documentation for a sub challenge using the [LeetCode](https://leetcode.com/) web platform.
+The [elitecode](elitecode) directory contains documentation for a sub challenge using the [LeetCode](https://leetcode.com/) web platform.
