@@ -15,3 +15,5 @@ Challenge problem implementations exist in the `main` directory and are tested u
 The [challenges](challenges) directory contains the challenge prompts and also developer notes/responses to these prompts.
 
 The [elitecode](elitecode) directory contains documentation for a sub challenge using the [LeetCode](https://leetcode.com/) web platform.
+
+The [algorithmic](algorithmic) directory contains jupyter notebooks on popular algorithmic topics.
